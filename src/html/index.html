@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <ol class="header__navigation site-navigation">
+                <li class="site-navigation__el site-navigation--color-secondary site-navigation--size-m">
+                    <img src="/src/img/mainLogo.png" alt="Икит Сфу" class="header__logo">
+                </li>
+                <li class="site-navigation__el site-navigation--color-secondary site-navigation--size-m">
+                    <a href="#">
+                        Главная
+                    </a>
+                </li>
+                <li class="site-navigation__el site-navigation--color-secondary site-navigation--size-m">
+                    Информация
+                </li>
+                <li class="site-navigation__el site-navigation--color-secondary site-navigation--size-m">
+                    Новости
+                </li>
+                <li class="site-navigation__el site-navigation--color-secondary site-navigation--size-m">
+                    Контакты
+                </li>
+            </ol>
+            <div class="header__user user-info">
+                <div class="text--color-light text--size-l">
+                    Ваше имя
+                </div>
+                <img src="/src/img/avatar.png" alt="Аватар" class="user-info__photo">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <article class="main-page">
+            <h1 class="main-page--size-4xl">Личная страница</h1>
+            <section class="main-page__info info">
+                <h2 class="info__header main-page--size-3xl">Полезная информация</h2>
+                <div class="info__sidebar">
+                    <form name="films">
+                        <input type="text" name="filmsInput" id="filmsInput" placeholder="введите название"/>
+                        <button class="searchFilm__btn" name="searchFilm__btn">Поиск</button>
+                        <button class="searchFilm__btn" name="throwOff">Сбросить</button>
+                    </form>
+                    <h3 class="main-page--size-2xl">Фильмы</h3>
+                    <ul class="info__advantages advantages" type="disc" id="advantages">
+                    </ul>
+                </div>
+                <div class="info__content">
+                    <h3 class="main-page--size-2xl"><b>СФУ и Российский университет спорта стали партнёрами</b></h3>
+                    <br>
+                    <h3 class="main-page--size-2xl">Заголовок</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <br>
+                    <h3 class="main-page--size-2xl">Заголовок</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </section>
+            <!-- названия классов!! -->
+            <section class="articles">
+                <h2 class="articles__title text--size-3xl">Интересные статьи</h2>
+                <form name="typeCatalog" class="typeCatalog">
+                    <input name="typelist" id="typelist" type="image" src="/assets/images/blacklist.png" alt="list">
+                    <input name="typegrid" id="typegrid" type="image" src="/assets/images/redgrid.png" alt="grid">
+                </form>
+                <div class="articles__catalog catalog" id="articles__catalog">
+                    <div class="catalog__item">
+                        <!-- <div class="catalog__img item1"></div> -->
+                        <img src="/assets/images/catalog-item1.png" alt="Рейтинг" class="catalog__img">
+                        <div class="catalog__container">
+                            <h3 class="catalog__title">
+                                <strong class="catalog__strong">Boost your conversion rate</strong>
+                            </h3>
+                            <p class="catalog__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
+                            </p>
+                            <date class="catalog__date" datetime="2020-2-12">02.12.2020</date>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <!-- <div class="catalog__img item2"></div> -->
+                        <img src="/assets/images/catalog-item2.png" alt="Рейтинг" class="catalog__img">
+                        <div class="catalog__container">
+                            <h3 class="catalog__title">
+                                <strong class="catalog__strong">How to use search engine optimization to drive sales</strong>
+                            </h3>
+                            <p class="catalog__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.
+                            </p>
+                            <date class="catalog__date" datetime="2020-3-10">10.03.2020</date>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <!-- <div class="catalog__img item3"></div> -->
+                        <img src="/assets/images/catalog-item3.png" alt="Рейтинг" class="catalog__img">
+                        <div class="catalog__container">
+                            <h3 class="catalog__title">
+                                <strong class="catalog__strong">Improve your customer experience</strong>
+                            </h3>
+                            <p class="catalog__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
+                            </p>
+                            <date class="catalog__date" datetime="2020-3-16">16.03.2020</date>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <form class="addCatalog" id="addCatalog">
+                <button class="addCatalog__button" id="addCatalog__button">Добавить</button>
+                <div class="addCatalog__title-title addCatalog__div">Название статьи</div>
+                <input class="addCatalog__title addCatalog__input" id="addCatalog__title" type="text"/>
+                <div class="addCatalog__ref-title addCatalog__div">Ссылка на картинку</div>
+                <input class="addCatalog__ref addCatalog__input"  id="addCatalog__ref"  type="text"/>
+                <div class="addCatalog__description addCatalog__div">Описание</div>
+                <textarea class="addCatalog__text addCatalog__input" id="addCatalog__text" type="text"></textarea>
+                <div class="addCatalog__btns">
+                    <button class="addCatalog__back addCatalog__btn" id="addCatalog__back">Отменить</button>
+                    <button class="addCatalog__create addCatalog__btn" id="addCatalog__create">Создать</button>
+                </div>
+            </form>
+            <div class="FAQ">
+                <h3 class="FAQ__title">FAQ</h3>
+                <dl class="FAQ__container1" id="FAQ__containerShow1">
+                    <dt class="FAQ__quest" id="FAQ__quest1">
+                        Название вопроса 1
+                    </dt>
+                    <dd class="FAQ__answer" id="FAQ__answer1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    </dd>
+                </dl>
+                <dl class="FAQ__container2" id="FAQ__containerShow2">
+                    <dt class="FAQ__quest" id="FAQ__quest2">
+                        Название вопроса 2
+                    </dt>
+                    <dd class="FAQ__answer" id="FAQ__answer2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    </dd>
+                </dl>
+                <dl class="FAQ__container3" id="FAQ__containerShow3">
+                    <dt class="FAQ__quest" id="FAQ__quest3">
+                        Название вопроса 3
+                    </dt>
+                    <dd class="FAQ__answer" id="FAQ__answer3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    </dd>
+                </dl>
+            </div>
+        
+        </article>
+    </div>
+    <footer class="about-us">
+        <div class="text--size-s text--color-white">© 2022 Институт космических и информационных технологий СФУ</div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

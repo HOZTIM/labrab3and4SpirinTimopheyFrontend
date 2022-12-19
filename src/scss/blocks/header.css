@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #1F2937;
+  padding: 10px 0;
+  height: 80px;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.site-navigation__el {
+  padding: 8px 12px;
+}
+
+.site-navigation__el:hover {
+  color: #fff;
+  background-color: #111827;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.header__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.user-info__photo {
+  background-color: #fff;
+  border-radius: 100px;
+  margin-left: 5px;
+}/*# sourceMappingURL=header.css.map */

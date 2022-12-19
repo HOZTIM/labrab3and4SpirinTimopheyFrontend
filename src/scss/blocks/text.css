@@ -1,0 +1,39 @@
+.text--color-white {
+  color: white;
+}
+
+.text--color-secondary {
+  color: #D1D5DB;
+}
+
+.text--color-light {
+  color: #F5F5F5;
+}
+
+.text--size-s {
+  font-size: 11px;
+}
+
+.text--size-m {
+  font-size: 14px;
+}
+
+.text--size-l {
+  font-size: 15px;
+}
+
+.text--size-xl {
+  font-size: 16px;
+}
+
+.text--size-2xl {
+  font-size: 23px;
+}
+
+.text--size-3xl {
+  font-size: 32px;
+}
+
+.text--size-4xl {
+  font-size: 40px;
+}/*# sourceMappingURL=text.css.map */

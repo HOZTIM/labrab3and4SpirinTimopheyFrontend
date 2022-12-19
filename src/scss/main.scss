@@ -1,0 +1,949 @@
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  line-height: 1.5; /* 2 */
+}
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+hr {
+  border-top-width: 1px;
+}
+
+
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * 1. Make replaced elements `display: block` by default as that's
+ *    the behavior you want almost all of the time. Inspired by
+ *    CSS Remedy, with `svg` added as well.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/14
+ *
+ * 2. Add `vertical-align: middle` to align replaced elements more
+ *    sensibly by default when overriding `display` by adding a
+ *    utility like `inline`.
+ *
+ *    This can trigger a poorly considered linting error in some
+ *    tools but is included by design.
+ *
+ *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their intrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+[hidden] {
+  display: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 100px;
+}
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* site-navigation-align: center; */
+    margin-top: 100px;
+
+    padding-bottom: 100px;
+}
+.articles__title{
+    width: 100%;
+}
+.site-navigation--color-white {
+    color: white;
+}
+.site-navigation--color-secondary {
+    color: #D1D5DB;
+}
+.site-navigation--color-light {
+    color: #F5F5F5;
+}
+.site-navigation--size-s{
+    font-size: 11px;
+}
+.site-navigation--size-m{
+    font-size: 14px;
+}
+.site-navigation--size-l{
+    font-size: 15px;
+}
+.site-navigation--size-xl{
+    font-size: 16px;
+}
+.site-navigation--size-2xl{
+    font-size: 23px;
+}
+.site-navigation--size-3xl{
+    font-size: 32px;
+}
+.site-navigation--size-4xl{
+    font-size: 40px;
+}
+.about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #1F2937;
+
+    padding-right: 50px;
+    height: 80px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #1F2937;
+
+    padding: 10px 0;
+
+    height: 80px;
+}
+
+.site-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+    width: 50%;
+}
+
+.site-navigation__el{
+    padding: 8px 12px;
+}
+
+.site-navigation__el:hover{
+    color: #fff;
+    background-color: #111827;
+    
+    cursor: pointer;
+    transition: 0.3s;
+    
+    border-radius: 6px
+}
+
+.header__user{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+
+.user-info__photo{
+    background-color: #fff;
+    
+    border-radius: 100px;
+    
+    margin-left: 5px;
+}
+.main-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1259px;
+}
+.info__header{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.info__sidebar{
+    border: 1px solid black;
+
+    padding: 30px 32px;
+
+    background-color: #FCFFE7;
+
+    height: auto;
+    width: 32%;
+}
+.info__content{
+    border: 1px solid black;
+
+    padding: 30px 32px;
+    
+    height: auto;
+    width: 66%;
+}
+.info__advantages{
+    list-style-type: disc;
+    padding-left: 30px;
+}
+.main-page{
+    margin-top: 50px;
+}
+.main-page--color-white {
+    color: white;
+}
+.main-page--color-secondary {
+    color: #D1D5DB;
+}
+.main-page--color-light {
+    color: #F5F5F5;
+}
+
+.main-page--size-s{
+    font-size: 11px;
+}
+.main-page--size-m{
+    font-size: 14px;
+}
+.main-page--size-l{
+    font-size: 15px;
+}
+.main-page--size-xl{
+    font-size: 16px;
+}
+.main-page--size-2xl{
+    font-size: 23px;
+}
+.main-page--size-3xl{
+    font-size: 32px;
+}
+.main-page--size-4xl{
+    font-size: 40px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1292px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text--color-white {
+    color: white;
+}
+.text--color-secondary {
+    color: #D1D5DB;
+}
+.text--color-light {
+    color: #F5F5F5;
+}
+
+.text--size-s{
+    font-size: 11px;
+}
+.text--size-m{
+    font-size: 14px;
+}
+.text--size-l{
+    font-size: 15px;
+}
+.text--size-xl{
+    font-size: 16px;
+}
+.text--size-2xl{
+    font-size: 23px;
+}
+.text--size-3xl{
+    font-size: 32px;
+}
+.text--size-4xl{
+    font-size: 40px;
+}
+.container {
+    max-width: 1292px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+.films__btn{
+    background-color: #D9D9D9;
+    border: 1px solid black;
+    padding: 0 3px;
+}
+.img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.catalog{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.catalog__item{
+  display: grid;
+  grid-template-rows: 192px 92px 192px;
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px 0 20px 0;
+  overflow: auto;
+}
+.catalog__text{
+  padding: 24px;
+}
+.catalog__title{
+  padding: 20px 0 12px 0;
+}
+.catalog__strong{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+} 
+.catalog__date{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 24px 0 24px;
+  font-weight: 100;
+  color: #6B7280;
+}
+.typeCatalog{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.catalog__container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.item1{
+  background-image: url("/assets/images/catalog-item1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.item2{
+  background-image: url("/assets/images/catalog-item2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.item3{
+  background-image: url("/assets/images/catalog-item3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.catalog__img{
+  height: 100%;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.change-display {
+  & .catalog {
+    justify-content: center;
+  }
+  & .catalog__item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    grid-template-rows: auto;
+  }
+
+  & .catalog__img {
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+  }
+}
+
+.addCatalog{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.addCatalog__button{
+  align-self: center;
+  background-color: #FCFFE7;
+  width: 403px;
+  height: 44px;
+}
+.addCatalog__input{
+  display: none;
+  width: 834px;
+  height: 44px;
+  margin-bottom: 35px;
+}
+.addCatalog__btns{
+  display: none;
+  // display: flex;
+  justify-content: space-between;
+}
+.addCatalog__btn{
+  display: none;
+  width: 299px;
+  height: 44px;
+}
+.addCatalog__div{
+  display: none;
+  margin-bottom: 10px;
+}
+.openform{
+ & .addCatalog__button{
+  display: none;
+ }
+ & .addCatalog__btns{
+  display: flex;
+ }
+ & .addCatalog__btn{
+  display: block;
+ }
+ & .addCatalog__div{
+  display: block;
+ }
+ & .addCatalog__input{
+  display: block;
+ }
+}
+.addCatalog__text {
+	resize: vertical;
+	height: 150px;
+}
+
+.FAQ__quest{
+  display: flex;
+  background-color: #D9D9D9;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  padding-left: 32px;
+  cursor: pointer;
+}
+.FAQ__answer{
+  display: none;
+  width: 100%;
+  height: auto;
+}
+.FAQ{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FAQ__title{
+  font-size: 32px;
+}
+
+.FAQ__containerShow {
+  & .FAQ__answer{
+    display: block;
+  }
+}
+.FAQ *{
+  width: 100%;
+  margin-bottom: 30px;
+}
